@@ -1,0 +1,20 @@
+#list-container {
+    padding: 2%;
+}
+
+#list-container > h1 {
+    font-size: 25px;
+}
+
+#list {
+    padding-top: 30%;
+}
+
+#list > li {
+    text-align: center;
+    font-size: 25px;
+}
+
+#name-seperator {
+    border-top: 1px dashed blue;
+}

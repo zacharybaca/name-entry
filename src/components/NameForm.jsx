@@ -5,7 +5,6 @@ export default function NameForm(props) {
     return (
         <div id="form-container">
           <form id="name-form">
-            <label htmlFor="name">Enter A Name: </label>
             <input 
               type="text" 
               name="name" 
@@ -15,6 +14,7 @@ export default function NameForm(props) {
               value={props.name}
             />
             <button id="name-button" onClick={props.addName}>Add Name To List</button>
+            <button id="clear-button" onClick={props.clear}>Clear List</button>
           </form>
       </div>
     )

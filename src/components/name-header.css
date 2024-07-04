@@ -1,0 +1,9 @@
+#name-header-container {
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+
+#name-entered {
+    font-style: italic;
+    font-weight: 800;
+}

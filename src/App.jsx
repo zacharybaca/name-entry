@@ -14,18 +14,28 @@ function App() {
 
   function addName(event) {
     event.preventDefault();
-    
+
     if (header) {
       setSavedNames((prevState) => [...prevState, header]);
     }
+
+    setHeader("");
+  }
+
+  function clearList(event) {
+    event.preventDefault();
+
+    setSavedNames([]);
   }
 
   return (
     <div id="app-container">
+      <h1 id="app-heading">Guest List Tracker</h1>
       <NameForm 
         name={header} 
         handleChange={handleChange}
         addName={addName}
+        clear={clearList}
       />
       <NameHeader name={header}/>
       <List names={savedNames}/>
