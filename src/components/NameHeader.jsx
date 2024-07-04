@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 
-
-export default function NameHeader() {
+import "./name-header.css";
+export default function NameHeader(props) {
     return (
         <div id="name-header-container">
-            <h1></h1>
+            <h1>{props.name}</h1>
         </div>
     )
 }

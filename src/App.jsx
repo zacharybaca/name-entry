@@ -1,17 +1,23 @@
+import React from "react";
 import NameHeader from "./components/NameHeader";
 import List from "./components/List";
+import NameForm from "./components/NameForm";
 import './App.css'
 
 function App() {
-  
+  const [header, setHeader] = React.useState("");
+
+  function handleChange(event) {
+    setHeader(event.target.value)
+  }
 
   return (
     <div id="app-container">
-      <div id="input-container">
-        <label htmlFor="name-box"></label>
-        <input type="text" name="name-box" id="name-box" />
-      </div>
-      <NameHeader />
+      <NameForm 
+        name={header} 
+        handleChange={handleChange}
+      />
+      {header ? <NameHeader name={header}/> : ""}
       <List />
     </div>
   )

@@ -1,5 +1,5 @@
 
-
+import "./list.css";
 export default function List() {
     return (
         <div id="list-container">
